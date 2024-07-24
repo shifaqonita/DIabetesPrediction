@@ -22,8 +22,8 @@ with st.form(key='prediction_form'):
     col1, col2 = st.columns(2)
 
     with col1:
+        Insulin = st.number_input('Insulin', min_value=0, max_value=1000, step=1, format='%d')
         Pregnancies = st.number_input('Angka Kehamilan', min_value=0, max_value=20, step=1, format='%d')
-        Glucose = st.number_input('Konsentrasi glukosa', min_value=0, max_value=300, step=1, format='%d')
         BloodPressure = st.number_input('Tekanan darah diastolik', min_value=0, max_value=200, step=1, format='%d')
         SkinThickness = st.number_input('Ketebalan lipatan kulit trisep', min_value=0, max_value=100, step=1, format='%d')
 
